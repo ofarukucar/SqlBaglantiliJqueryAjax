@@ -1,0 +1,17 @@
+﻿@model List<SqlBaglantiliJqueryAjax.Models.Student>
+
+<table>
+	<thead>
+		<tr>Name</tr>
+		<tr>Email</tr>
+		<tr>Phone</tr>		
+	</thead>
+	<tbody>
+		@foreach (var student in Model)
+		{
+			<tr>@student.Name</tr>
+			<tr>@student.Email</tr>
+			<tr>@student.Phone</tr>
+		}
+	</tbody>
+</table>
